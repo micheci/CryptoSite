@@ -1,9 +1,139 @@
-body {
-    background-image: url(../images/cool-background.png);
-    color: blue;
-    height: 100vh;
-    width: 100vh;
+body{
+   background-color: black;
+   color: white;
+
   }
+.lightMode{
+  background-color: aliceblue;
+  color: black;
+}
 h1{
-    color:blue;
+    color:rgb(138, 43, 226);
+}
+.navBar{
+  display: flex;
+  justify-content: space-around;
+}
+.links{
+  display: flex;
+  justify-content: space-around;
+  width: 100vh;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  
+  }
+
+
+.about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+img{
+  height: 13rem;
+}
+.apesPic{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2%;
+  justify-content: center;
+ 
+  
+}
+.top.bot{
+  margin-top: 2%;
+ margin-right: 10px;
+}
+.apePic{
+  padding: 1%;
+  
+  
+}
+.rightMunky{
+  margin-top:6rem ;
+   width: 50%;
+  
+}
+.text{
+  width: 25rem;
+  margin-top:6rem ;
+  margin-left: 6rem;
+  padding: 1rem;
+  border: 10px solid rgb(138, 43, 226,.6);
+  border-radius: 10%;
+  height: 25rem;
+  background-color: rgb(138, 43, 226,.3);
+}
+
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+.close:hover,
+.close:focus {
+  box-shadow: 
+    inset -3.5em 0 0 0 var(--hover),
+    inset 3.5em 0 0 0 var(--hover);  
+}
+
+
+
+
+
+
+
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+button {  
+  color: var(--color);
+  transition: 0.25s;
+  
+  &:hover,
+  &:focus { 
+    border-color: var(--hover);
+    color: #fff;
+  }
+}
+
+
+body {
+  color: #fff;
+  background: hsl(227, 10%, 10%);
+  font: 300 1em 'Fira Sans', sans-serif;
+  
+  
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+}
+
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+h1 { font-weight: 400; }
+
+code { 
+  color: #e4cb58;
+  font: inherit;
 }
