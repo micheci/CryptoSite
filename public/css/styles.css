@@ -66,7 +66,7 @@ img{
   padding: 1rem;
   border: 10px solid rgb(138, 43, 226,.6);
   border-radius: 10%;
-  height: 27rem;
+  height: 29rem;
   background-color: rgb(138, 43, 226,.3);
 }
 
@@ -137,13 +137,13 @@ img{
   border: 1px solid black;
 }
 .test {
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   background-color: yellow;
 }
 .profile{
-  display: flex;
-  flex-direction: column;
+ 
+  flex-direction: column;flex: 1 0 21%;
  
   
 }
@@ -152,4 +152,7 @@ img{
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 4rem;
+}
+.name{
+  color:rgb(138, 43, 226);
 }
