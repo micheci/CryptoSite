@@ -137,13 +137,14 @@ img{
   border: 1px solid black;
 }
 .test {
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   background-color: yellow;
 }
 .profile{
  
-  flex-direction: column;flex: 1 0 21%;
+  flex-direction: row;
+  flex: 1 0 21%;
  
   
 }
@@ -151,7 +152,7 @@ img{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 4rem;
+  padding: 3rem;
 }
 .name{
   color:rgb(138, 43, 226);
