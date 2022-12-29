@@ -157,3 +157,8 @@ img{
 .name{
   color:rgb(138, 43, 226);
 }
+.toggle{
+  text-decoration: none;
+  background-color:rgb(138, 43, 226) ;
+  border-radius: 10%;
+}
