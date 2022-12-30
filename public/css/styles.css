@@ -162,3 +162,7 @@ img{
   background-color:rgb(138, 43, 226) ;
   border-radius: 10%;
 }
+a{
+  text-decoration: none;
+  color:rgb(138, 43, 226) ;
+}
