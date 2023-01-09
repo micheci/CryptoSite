@@ -48,10 +48,10 @@
     <div class=".container-fluid">
       <div class="navBar mt-4">
         <div class="logo">
-            <h1>MunkyNFTs</h1>
+          <a href="/"><h1>MunkyNFTs</h1></a>
         </div>
         <ul class="links">
-          <a href=""><li>Team</li></a>
+          <a href="#Team"><li>Team</li></a>
           <a href=""><li>Buy Munky</li></a>
           <a href=/login id="link"><li>Log In</li></a>
           <a href="/signup"><li>Sign In</li></a>
@@ -91,8 +91,8 @@
         </div>
       </div>
 
-      <!-- Our team --><h3 class="text-center mb-2">Meet the team</h3>
-<div class="team">
+      <!-- Our team --><h3 class="text-center mb-2" id="Team">Meet the team</h3>
+<div class="team" >
       
       <div class="profile ">
         <img src="../images/teamMember1.jpg" class=" test rounded-circle" alt="">
@@ -144,6 +144,18 @@
     </div>
 
     
+<!-- BUY SEATCH CATALOG -->
+    <form action="/search" method="POST">
+      <input type="text" name="nft" id="nft" placeholder="Browse NFT's">
+    </form>
+    <div class="results">
+      <h1></h1>
+    </div>
+    
+
+
+
+
 
      <!-- Footer -->
 <!-- Footer -->
@@ -192,5 +204,6 @@
     <script src="../js/toggle.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/button.js"></script>
+    <script src="../js/api.js"></script>
 </body>
 </html>
