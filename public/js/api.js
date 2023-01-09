@@ -1,3 +1,5 @@
+document.querySelector('#search').addEventListener('click',getNFT)
+
 const options = {
 	method: 'GET',
 	headers: {
@@ -6,7 +8,15 @@ const options = {
 	}
 };
 
-fetch('https://movie-database-alternative.p.rapidapi.com/?s=Spiderman&r=json&page=1', options)
+function getNFT(e){
+	const name=document.querySelector('#name').value;
+
+fetch(`https://movie-database-alternative.p.rapidapi.com/?s=${name}&r=json&page=1`, options)
 	.then(response => response.json())
-	.then(response => console.log(response))
+	.then(response =>
+	console.log(response.Search)
+	)
 	.catch(err => console.error(err));
+}
+
+console.log("HELLO")
