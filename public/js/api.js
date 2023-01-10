@@ -14,7 +14,12 @@ function getNFT(e){
 fetch(`https://movie-database-alternative.p.rapidapi.com/?s=${name}&r=json&page=1`, options)
 	.then(response => response.json())
 	.then(response =>
-	console.log(response.Search)
+		
+		 document.querySelector("#results").innerHTML=`
+		<img src="${response.Search[0].Poster}"/>`
+		
+		
+	
 	)
 	.catch(err => console.error(err));
 }

@@ -166,3 +166,10 @@ a{
   text-decoration: none;
   color:rgb(138, 43, 226) ;
 }
+.browse{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+#search{
+ background-color:rgb(138, 43, 226)
+}
